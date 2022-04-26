@@ -1,12 +1,11 @@
 import Link from "next/link";
 import Avatar from "../UI/Avatar";
+import { useContext } from "react";
+import { UserContext } from "../../lib/context";
 
 const Navbar = () => {
   // Dev
-  const { user, username }: { user: boolean; username: string | null } = {
-    user: true,
-    username: 'Wra',
-  };
+  const { user, username } = useContext(UserContext)
 
   return (
     <div className="navbar bg-base-200/30 backdrop-blur-sm sticky top-0 justify-between px-10 py-2">
@@ -36,7 +35,7 @@ const Navbar = () => {
         {!username && (
           <>
             <li>
-              <Link href="/">
+              <Link href="/enter">
                 <a className="px-4 normal-case btn btn-primary text-lg">
                   Login
                 </a>

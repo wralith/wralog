@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import Spinner from "../components/UI/Spinner";
+import Enter from "./enter";
 
 const Home: NextPage = () => {
   return (
@@ -18,8 +19,6 @@ const Home: NextPage = () => {
           Wra
         </Link>
       </div>
-
-      <Spinner show />
     </div>
   );
 };
