@@ -24,8 +24,8 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href={`/${username}`} passHref>
-                <Avatar />
+              <Link href={`/${username}`}>
+                <a><Avatar /></a>
               </Link>
             </li>
           </>
